@@ -1,4 +1,4 @@
-# @tbassetto/webfonts-generator
+# @collab-ui/webfonts-generator
 
 This webfonts generator takes SVG icons and transform them to WOFF and WOFF 2 fonts.
 
