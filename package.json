@@ -7,9 +7,14 @@
     "type": "git",
     "url": "git@github.com:collab-ui/webfonts-generator.git"
   },
-  "author": "Thomas Bassetto <thobasse@cisco.com>",
+  "bugs": {
+    "url": "https://github.com/collab-ui/collab-ui/issues"
+  },
+  "author": "Cisco Systems, Inc.",
+  "contributors": [
+    "Thomas Bassetto <thobasse@cisco.com>"
+  ],
   "license": "MIT",
-  "private": false,
   "engines": {
     "node": "^10.0.0"
   },
@@ -32,5 +37,8 @@
     "lint": "eslint '**/*.js'",
     "prettify": "prettier --write '**/*.{js,json,md}'",
     "test": "jest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
