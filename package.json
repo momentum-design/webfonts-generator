@@ -1,5 +1,5 @@
 {
-  "name": "@collab-ui/webfonts-generator",
+  "name": "@momentum-ui/webfonts-generator",
   "version": "1.0.0",
   "description": "Modern webfonts generator from SVG icons",
   "main": "src/index.js",
