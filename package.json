@@ -1,14 +1,14 @@
 {
-  "name": "@momentum-ui/webfonts-generator",
+  "name": "@tbassetto/webfonts-generator",
   "version": "1.0.0",
   "description": "Modern webfonts generator from SVG icons",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:collab-ui/webfonts-generator.git"
+    "url": "git@github.com:momentum-design/webfonts-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/collab-ui/collab-ui/issues"
+    "url": "https://github.com/momentum-design/webfonts-generator/issues"
   },
   "author": "Cisco Systems, Inc.",
   "contributors": [

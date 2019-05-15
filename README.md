@@ -1,4 +1,6 @@
-# @collab-ui/webfonts-generator
+# @momentum-ui/webfonts-generator
+
+> ⚠️Warning: this package is published on npm as `@tbassetto/webfonts-generator` for now.
 
 This webfonts generator takes SVG icons and transform them to WOFF and WOFF 2 fonts.
 
@@ -18,7 +20,7 @@ Despite being written from scratch, this project was inspired by the (now archiv
 ## Usage
 
 ```js
-const { generateFonts } = require("@collab-ui/webfonts-generator");
+const { generateFonts } = require("@momentum-ui/webfonts-generator");
 
 generateFonts("My Awesome Font", "icons/*.svg", "fonts").then(result => {
   console.log(`Webfont ${result.fontName} created!`);
