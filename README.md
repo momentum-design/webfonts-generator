@@ -1,7 +1,5 @@
 # @momentum-ui/webfonts-generator
 
-> ⚠️Warning: this package is published on npm as `@tbassetto/webfonts-generator` for now.
-
 This webfonts generator takes SVG icons and transform them to WOFF and WOFF 2 fonts.
 
 Developed specifically for the needs of [Cisco's Momentum design system](http://www.momentum-ui.com), this project is quite opinionated but open to features request and PRs nonetheless.
@@ -15,7 +13,7 @@ Despite being written from scratch, this project was inspired by the (now archiv
 - Never tested on Windows (but should work).
 - Does not generate EOT font (unecessary, woff and woff2 cover all modern browsers as well as IE9 and IE10).
 - There is no CLI, only a Node.JS API (PR welcome).
-- There is no way to pass down options to the tools used under the hood (`svgicons2svgfont`, `svg2ttf`, `ttf2woff` and `ttf2woff2`).
+- There is no way to pass down options to the tools used under the hood (`svgicons2svgfont`, `svg2ttf`, `ttf2woff` and `wawoff2`).
 
 ## Usage
 

@@ -1,5 +1,5 @@
 {
-  "name": "@tbassetto/webfonts-generator",
+  "name": "@momentum-ui/webfonts-generator",
   "version": "2.0.0",
   "description": "Modern webfonts generator from SVG icons",
   "main": "src/index.js",
