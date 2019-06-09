@@ -7,7 +7,7 @@ const {
   generateWOFF2Font
 } = require("../lib/fontsGenerators");
 
-async function generateFonts(fontName, pattern, dest = "dist") {
+async function generateFonts(fontName, pattern, dest = "dist", options = {}) {
   try {
     if (!fontName) throw new Error(`A font name wasn't specified`);
 
@@ -35,7 +35,7 @@ async function generateFonts(fontName, pattern, dest = "dist") {
     const {
       buffer: svgFontBuffer,
       fileCreated: svgFile
-    } = await generateSVGFont(glyphsData, fontName, dest);
+    } = await generateSVGFont(glyphsData, fontName, dest, options);
 
     const {
       buffer: ttfFontBuffer,
