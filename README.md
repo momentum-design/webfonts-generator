@@ -13,19 +13,25 @@ Despite being written from scratch, this project was inspired by the (now archiv
 - Never tested on Windows (but should work).
 - Does not generate EOT font (unecessary, woff and woff2 cover all modern browsers as well as IE9 and IE10).
 - There is no CLI, only a Node.JS API (PR welcome).
-- There is no way to pass down options to the tools used under the hood (`svgicons2svgfont`, `svg2ttf`, `ttf2woff` and `wawoff2`).
+- There is no way to pass down options to some of the tools used under the hood (`svg2ttf`, `ttf2woff` and `wawoff2`).
+- You can pass down the following options for [svgicons2svgfont](https://github.com/nfroidure/svgicons2svgfont#svgicons2svgfontoptions), :
+  - normalize: `boolean`
+  - fontHeight: `number`
 
 ## Usage
 
 ```js
 const { generateFonts } = require("@momentum-ui/webfonts-generator");
+const options = {};
 
-generateFonts("My Awesome Font", "icons/*.svg", "fonts").then(result => {
-  console.log(`Webfont ${result.fontName} created!`);
-  console.log(`WOFF file: ${result.fontFiles.woff}`);
-  console.log(`WOFF2 file: ${result.fontFiles.woff2}`);
-  console.log(`Glyphs information:`, result.glyphsData);
-});
+generateFonts("My Awesome Font", "icons/*.svg", "fonts", options).then(
+  result => {
+    console.log(`Webfont ${result.fontName} created!`);
+    console.log(`WOFF file: ${result.fontFiles.woff}`);
+    console.log(`WOFF2 file: ${result.fontFiles.woff2}`);
+    console.log(`Glyphs information:`, result.glyphsData);
+  }
+);
 ```
 
 ## Development
