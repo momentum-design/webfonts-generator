@@ -40,7 +40,7 @@ async function generateFonts(fontName, pattern, dest = "dist", options = {}) {
     const {
       buffer: ttfFontBuffer,
       fileCreated: ttfFile
-    } = await generateTTFFont(svgFontBuffer, fontName, dest);
+    } = await generateTTFFont(svgFontBuffer, fontName, dest, options);
 
     const { fileCreated: wofffFile } = await generateWOFFFont(
       ttfFontBuffer,
