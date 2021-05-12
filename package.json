@@ -1,6 +1,6 @@
 {
   "name": "@momentum-ui/webfonts-generator",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "description": "Modern webfonts generator from SVG icons",
   "main": "src/index.js",
   "repository": {
@@ -12,11 +12,12 @@
   },
   "author": "Cisco Systems, Inc.",
   "contributors": [
-    "Thomas Bassetto <thobasse@cisco.com>"
+    "Thomas Bassetto <thobasse@cisco.com>",
+    "Paul Witty <pauwitty@cisco.com>"
   ],
   "license": "MIT",
   "engines": {
-    "node": "^10.0.0"
+    "node": ">=10.0.0"
   },
   "dependencies": {
     "glob": "^7.1.3",
